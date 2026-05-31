@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="思廉传廉，以技载道 — 廉洁文化主题网站，展现信息技术专业学生的清正自律与职业操守">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>思廉传廉 · 以技载道</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<canvas id="particles-canvas" aria-hidden="true"></canvas>
+<canvas id="confetti-canvas" aria-hidden="true"></canvas>
+<div class="floating-decorations" aria-hidden="true"></div>
+<div class="scroll-progress" aria-hidden="true"></div>
+<div class="cursor-glow" aria-hidden="true"></div>
+<nav aria-label="主导航">
+  <a href="#hero" class="nav-logo">思廉传廉</a>
+  <ul class="nav-links">
+    <li><a href="#intro">主题介绍</a></li>
+    <li><a href="#stories">廉洁故事</a></li>
+    <li><a href="#quotes">名言警句</a></li>
+    <li><a href="#ethics">技术伦理</a></li>
+    <li><a href="#cases">科技案例</a></li>
+    <li><a href="#integrity">学术诚信</a></li>
+    <li><a href="#reflection">互动思考</a></li>
+    <li><a href="#quiz">知识问答</a></li>
+    <li><a href="#pledge">廉洁承诺</a></li>
+    <li><a href="#conclusion">结语</a></li>
+  </ul>
+  <button type="button" class="hamburger" aria-label="打开菜单" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
+<button type="button" class="back-to-top" aria-label="返回顶部" title="返回顶部">↑</button>
+<main>
+<section class="hero" id="hero">
+  <div class="hero-pattern">
+    <svg viewBox="0 0 200 200">
+      <circle cx="100" cy="100" r="80" fill="none" stroke="#1e3a8a" stroke-width="1"/>
+      <circle cx="100" cy="100" r="60" fill="none" stroke="#1e3a8a" stroke-width="1"/>
+      <circle cx="100" cy="100" r="40" fill="none" stroke="#1e3a8a" stroke-width="1"/>
+      <line x1="100" y1="20" x2="100" y2="180" stroke="#1e3a8a" stroke-width="0.5"/>
+      <line x1="20" y1="100" x2="180" y2="100" stroke="#1e3a8a" stroke-width="0.5"/>
+      <line x1="44" y1="44" x2="156" y2="156" stroke="#1e3a8a" stroke-width="0.5"/>
+      <line x1="156" y1="44" x2="44" y2="156" stroke="#1e3a8a" stroke-width="0.5"/>
+    </svg>
+  </div>
+  <div class="hero-content">
+    <div class="hero-tag">— 廉洁文化主题网站 —</div>
+    <h1 class="hero-title">
+      <span class="main-text">思廉传廉 · 以技载道</span>
+      <span class="sub-text">代码藏初心 · 数据见操守 · 算法映底线</span>
+    </h1>
+    <p class="hero-desc">
+      数字时代，技术是社会发展的核心驱动力，而技术伦理与职业廉洁是数字行业良性发展的基石。
+    </p>
+    <div class="hero-buttons">
+      <a href="#intro" class="btn btn-primary">了解更多</a>
+      <a href="#stories" class="btn btn-secondary">阅读故事</a>
+    </div>
+  </div>
+</section>
+
+<section class="intro" id="intro">
+  <div class="section-header reveal">
+    <h2>主题介绍</h2>
+    <p>落实学院"专业、实践、职业"三维廉政培育体系</p>
+  </div>
+  <div class="stats-section reveal">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <span class="stat-number" data-target="5000">0</span>
+        <span class="stat-suffix">+</span>
+        <span class="stat-label">年廉洁文化传承</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" data-target="6">0</span>
+        <span class="stat-label">个经典廉洁故事</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" data-target="4">0</span>
+        <span class="stat-label">大技术伦理准则</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" data-target="100">0</span>
+        <span class="stat-suffix">%</span>
+        <span class="stat-label">廉洁初心坚守</span>
+      </div>
+    </div>
+  </div>
+  <div class="intro-container">
+    <div class="intro-image reveal">
+      <div class="intro-image-main" aria-hidden="true">⚖️</div>
+    </div>
+    <div class="intro-text reveal">
+      <h3>关于本次活动</h3>
+      <p>
+        为深入贯彻落实廉洁文化建设要求，将廉政文化与信息技术专业深度融合，
+        特举办本次"思廉传廉，以技载道"网页设计大赛。
+      </p>
+      <p>
+        本次活动以网页设计为载体，让学生以技传廉、以艺颂廉，深刻理解数据真实、
+        算法公正、技术守底的职业意义，夯实青年学生廉洁价值观。
+      </p>
+      <div class="quote">
+        <p>"不受曰廉，不污曰洁。" —— 王逸《楚辞·章句》</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="stories" id="stories">
+  <div class="section-header reveal">
+    <h2>廉洁故事</h2>
+    <p>以史为鉴，知廉守正</p>
+  </div>
+  <div class="stories-container">
+    <div class="stories-grid">
+      <div class="story-card reveal">
+        <div class="story-icon" aria-hidden="true">🏛️</div>
+        <div class="time">春秋时期</div>
+        <h3>子罕辞宝</h3>
+        <p>
+          宋有人得玉献子罕，子罕曰："我以不贪为宝，尔以玉为宝。若以与我，皆丧宝也，不若人有其宝。"
+          以不贪为宝，彰显廉洁本色。
+        </p>
+      </div>
+      <div class="story-card reveal">
+        <div class="story-icon" aria-hidden="true">📜</div>
+        <div class="time">东汉</div>
+        <h3>杨震却金</h3>
+        <p>
+          杨震迁东莱太守，道经昌邑，故所举王密为令，夜怀金十斤遗震。
+          震曰："故人知君，君不知故人，何也？"密曰："暮夜无知者。"
+          震曰："天知，神知，我知，子知。何谓无知！"
+        </p>
+      </div>
+      <div class="story-card reveal">
+        <div class="story-icon" aria-hidden="true">🎋</div>
+        <div class="time">明朝</div>
+        <h3>于谦两袖清风</h3>
+        <p>
+          于谦任巡抚，入京朝觐不纳礼品，人劝其纳土产，于谦笑举两袖曰：
+          "吾唯有清风两袖而已！"赋诗曰："清风两袖朝天去，免得闾阎话短长。"
+        </p>
+      </div>
+      <div class="story-card reveal">
+        <div class="story-icon" aria-hidden="true">⚖️</div>
+        <div class="time">北宋</div>
+        <h3>包拯铁面无私</h3>
+        <p>
+          包拯任端州知州，端州产名砚，前任多借机敛财。包拯离任时"不持一砚归"，
+          秉公执法，不畏权贵。京城有"关节不到，有阎罗包老"之誉，成为千古清官典范。
+        </p>
+      </div>
+      <div class="story-card reveal">
+        <div class="story-icon" aria-hidden="true">🏮</div>
+        <div class="time">明朝</div>
+        <h3>海瑞备棺上疏</h3>
+        <p>
+          海瑞为官清廉，以"直言敢谏"著称。任淳安知县时，穿布袍、食粗粮，
+          令家人种菜自给。上疏批评嘉靖帝前，已自备棺材，以死明志，一生刚正不阿。
+        </p>
+      </div>
+      <div class="story-card reveal">
+        <div class="story-icon" aria-hidden="true">🌾</div>
+        <div class="time">现代</div>
+        <h3>焦裕禄鞠躬尽瘁</h3>
+        <p>
+          焦裕禄任兰考县委书记期间，身患肝癌仍坚守岗位，带领群众治理
+          风沙、盐碱、内涝三害。他生活简朴，坚持"不搞特殊化"，用一生践行了廉洁奉公的誓言。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="quotes" id="quotes">
+  <div class="section-header reveal">
+    <h2>名言警句</h2>
+    <p>先贤教诲，字字珠玑</p>
+  </div>
+  <div class="quotes-container">
+    <div class="quotes-grid">
+      <div class="quote-card reveal">
+        <span class="quote-mark" aria-hidden="true">"</span>
+        <p class="quote-text">
+          廉者，民之表也；贪者，民之贼也。
+        </p>
+        <p class="quote-author">—— 包拯《乞不用赃吏疏》</p>
+      </div>
+      <div class="quote-card reveal">
+        <span class="quote-mark" aria-hidden="true">"</span>
+        <p class="quote-text">
+          历览前贤国与家，成由勤俭破由奢。
+        </p>
+        <p class="quote-author">—— 李商隐《咏史》</p>
+      </div>
+      <div class="quote-card reveal">
+        <span class="quote-mark" aria-hidden="true">"</span>
+        <p class="quote-text">
+          其身正，不令而行；其身不正，虽令不从。
+        </p>
+        <p class="quote-author">—— 《论语·子路》</p>
+      </div>
+      <div class="quote-card reveal">
+        <span class="quote-mark" aria-hidden="true">"</span>
+        <p class="quote-text">
+          源洁则流清，形端则影直。
+        </p>
+        <p class="quote-author">—— 王勃《上刘右相书》</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ethics" id="ethics">
+  <div class="section-header reveal">
+    <h2>技术伦理</h2>
+    <p>数字时代的职业操守</p>
+  </div>
+  <div class="ethics-container">
+    <div class="ethics-grid">
+      <div class="ethic-card reveal">
+        <span class="ethic-card-number">01</span>
+        <div class="ethic-card-icon" aria-hidden="true">🔒</div>
+        <h3>数据真实</h3>
+        <p>
+          坚守数据真实性原则，不伪造、不篡改、不隐瞒数据，确保每一行代码、每一个字节都承载着诚实与责任，用真实的数据支撑决策与发展。
+        </p>
+      </div>
+      <div class="ethic-card reveal">
+        <span class="ethic-card-number">02</span>
+        <div class="ethic-card-icon" aria-hidden="true">⚡</div>
+        <h3>算法公正</h3>
+        <p>
+          设计算法时秉持公正之心，避免偏见与歧视，让技术服务于全体人类，
+          确保算法决策的透明性与可解释性，用技术促进社会公平正义。
+        </p>
+      </div>
+      <div class="ethic-card reveal">
+        <span class="ethic-card-number">03</span>
+        <div class="ethic-card-icon" aria-hidden="true">🛡️</div>
+        <h3>技术守底</h3>
+        <p>
+          坚守技术伦理底线，绝不滥用技术能力，保护用户隐私与数据安全，
+          用技术造福社会而非谋求私利，做有良知的信息技术从业者。
+        </p>
+      </div>
+      <div class="ethic-card reveal">
+        <span class="ethic-card-number">04</span>
+        <div class="ethic-card-icon" aria-hidden="true">💡</div>
+        <h3>创新向善</h3>
+        <p>
+          以向善之心推动技术创新，让技术进步服务于人类福祉，
+          关注技术的社会影响，主动承担技术带来的责任与义务。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tech-cases" id="cases">
+  <div class="section-header reveal">
+    <h2>科技廉洁案例</h2>
+    <p>数字时代的廉洁实践</p>
+  </div>
+  <div class="tech-cases-container">
+    <div class="cases-timeline">
+      <div class="case-item reveal">
+        <h3>开源精神与知识共享</h3>
+        <span class="case-tag">开源伦理</span>
+        <p>
+          Linux 操作系统创始人 Linus Torvalds 将内核源码公之于众，开创了全球协作的开源运动。
+          开源社区以透明、共享、协作为核心价值，代码公开审查，杜绝暗箱操作，体现了技术人的无私与诚信。
+        </p>
+      </div>
+      <div class="case-item reveal">
+        <h3>数据隐私保护法规</h3>
+        <span class="case-tag">数据安全</span>
+        <p>
+          欧盟《通用数据保护条例》（GDPR）的出台，标志着全球对个人数据隐私的重视。
+          技术从业者有责任在系统设计之初就嵌入隐私保护机制，做到"隐私即设计"，
+          不滥用、不泄露用户数据，以法律法规为准绳，守住数据伦理底线。
+        </p>
+      </div>
+      <div class="case-item reveal">
+        <h3>算法偏见的警示</h3>
+        <span class="case-tag">算法公正</span>
+        <p>
+          某招聘平台算法被发现对女性求职者存在系统性偏见，引发广泛关注。
+          此案例警示我们：算法并非天生中立，开发者应主动审查算法的公平性，
+          以公心设计、以诚心迭代，确保技术成果服务于所有人而非加剧社会不公。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="integrity" id="integrity">
+  <div class="section-header reveal">
+    <h2>学术诚信</h2>
+    <p>治学之本，立德之基</p>
+  </div>
+  <div class="integrity-container">
+    <div class="integrity-points">
+      <div class="integrity-point reveal">
+        <h4>拒绝抄袭</h4>
+        <p>尊重他人的知识产权与劳动成果，独立完成作业与项目，不剽窃、不抄袭、不代笔。代码查重与灵感借鉴有本质区别，拒绝直接复制他人作品。</p>
+      </div>
+      <div class="integrity-point reveal">
+        <h4>诚实标注</h4>
+        <p>引用他人成果时规范标注来源，遵循学术规范，确保引用真实准确。使用 AI 辅助工具时如实说明，不隐瞒、不谎报技术创新点。</p>
+      </div>
+      <div class="integrity-point reveal">
+        <h4>严谨治学</h4>
+        <p>以科学的态度对待学术研究，不伪造数据，不篡改结果，追求真理与真知。实验数据必须可复现，测试报告确保真实完整。</p>
+      </div>
+      <div class="integrity-point reveal">
+        <h4>原创合规</h4>
+        <p>所有作品必须为原创，杜绝学术与创作不端，确保无版权争议。使用开源代码、第三方库时须遵守其许可证规定，尊重原作者权益。</p>
+      </div>
+      <div class="integrity-point reveal">
+        <h4>代码诚信</h4>
+        <p>编写代码时恪守职业道德，不植入后门、不窃取数据、不滥用权限。提交项目时保证代码为本人所写，严禁购买或转售课程作业。</p>
+      </div>
+      <div class="integrity-point reveal">
+        <h4>团队协作诚信</h4>
+        <p>团队项目中如实记录各自的贡献，不抢功、不推诿。以诚信为本，在合作中建立互信，用透明的沟通确保项目顺利进行。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="reflection" id="reflection">
+  <div class="section-header reveal">
+    <h2>互动思考</h2>
+    <p>以思促行，知行合一</p>
+  </div>
+  <div class="reflection-container">
+    <div class="reflection-cards">
+      <div class="reflection-card reveal">
+        <span class="reflection-icon" aria-hidden="true">🤔</span>
+        <h4>如果我发现了系统漏洞？</h4>
+        <p class="reflection-question">面对系统安全漏洞，是悄悄利用谋取私利，还是负责任地报告并协助修复？技术能力越强，责任越大。</p>
+        <div class="reflection-answer">💡 正确的选择：立即通过正规渠道报告漏洞，协助修复。这不仅是对用户负责，更是技术人的职业底线。</div>
+        <div class="reflection-hint">点击查看启示 →</div>
+      </div>
+      <div class="reflection-card reveal">
+        <span class="reflection-icon" aria-hidden="true">🔍</span>
+        <h4>数据可以"美化"吗？</h4>
+        <p class="reflection-question">当上级要求你"优化"一下数据让报告更好看时，你会怎么做？数据的真实性是技术的基石。</p>
+        <div class="reflection-answer">💡 数据真实性是不可逾越的红线。如实呈现数据，同时寻找合法合规的方式提升指标，诚信比数字更重要。</div>
+        <div class="reflection-hint">点击查看启示 →</div>
+      </div>
+      <div class="reflection-card reveal">
+        <span class="reflection-icon" aria-hidden="true">⚡</span>
+        <h4>算法该为效率牺牲公平吗？</h4>
+        <p class="reflection-question">当效率与公平产生冲突时，作为技术开发者，你会如何权衡？技术向善不是选择题，而是必答题。</p>
+        <div class="reflection-answer">💡 公平优先，效率兼顾。设计算法时应主动审查偏见，接受多元反馈，确保技术成果惠及每一个人。</div>
+        <div class="reflection-hint">点击查看启示 →</div>
+      </div>
+      <div class="reflection-card reveal">
+        <span class="reflection-icon" aria-hidden="true">🌍</span>
+        <h4>我的代码会影响谁？</h4>
+        <p class="reflection-question">写下的每一行代码都可能影响成千上万的用户。你是否考虑过技术成果的社会影响与伦理边界？</p>
+        <div class="reflection-answer">💡 代码即责任。在每一次提交前问自己：这段代码会对用户产生什么影响？是否符合伦理与法律？</div>
+        <div class="reflection-hint">点击查看启示 →</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="quiz" id="quiz">
+  <div class="section-header reveal">
+    <h2>廉洁知识问答</h2>
+    <p>测测你对廉洁文化的了解</p>
+  </div>
+  <div class="quiz-container reveal">
+    <div class="quiz-progress" id="quizProgress"></div>
+    <div class="quiz-card" id="quizCard"></div>
+  </div>
+</section>
+
+<section class="pledge" id="pledge">
+  <div class="section-header reveal">
+    <h2>廉洁承诺</h2>
+    <p>写下你的名字，生成专属承诺卡</p>
+  </div>
+  <div class="pledge-container reveal">
+    <form class="pledge-form" id="pledgeForm" novalidate>
+      <div class="pledge-input-group">
+        <label for="pledgeName">你的姓名</label>
+        <input type="text" id="pledgeName" name="pledgeName" autocomplete="name" spellcheck="false" placeholder="请输入你的姓名" maxlength="20">
+      </div>
+      <div class="pledge-input-group">
+        <label for="pledgeText">你的廉洁承诺（可自定义）</label>
+        <textarea id="pledgeText" name="pledgeText" placeholder="我承诺：在未来的学习和工作中，坚守廉洁底线……" maxlength="200"></textarea>
+      </div>
+      <div class="pledge-buttons">
+        <button type="submit" class="btn btn-primary" id="pledgeGenerate">生成我的承诺卡</button>
+        <button type="reset" class="btn btn-secondary" id="pledgeReset">重新填写</button>
+      </div>
+      <div class="pledge-card-output" id="pledgeCard">
+        <div class="pledge-card-seal">廉洁承诺</div>
+        <div class="pledge-card-name" id="pledgeCardName"></div>
+        <div class="pledge-card-text" id="pledgeCardText"></div>
+        <div class="pledge-card-date" id="pledgeCardDate"></div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="conclusion" id="conclusion">
+  <div class="section-header reveal">
+    <h2>结语</h2>
+    <p>让廉洁成为我们的行动自觉</p>
+  </div>
+  <div class="conclusion-container">
+    <div class="conclusion-text reveal">
+      <span class="highlight">代码藏初心</span>，<span class="gold">数据见操守</span>，<span class="highlight">算法映底线</span>。
+      <br><br>
+      作为新时代的信息技术学子，让我们将廉洁文化内化于心、外化于行，
+      用技术书写青春华章，用代码诠释时代担当，做清正廉洁的技术守护者！
+    </div>
+    <div class="conclusion-seal reveal">
+      思廉传廉
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-content">
+    <span class="footer-logo">景德镇艺术职业大学</span>
+    <div class="divider"></div>
+    <p>电子信息工程学院 · "思廉传廉，以技载道"网页设计大赛</p>
+  </div>
+</footer>
+</main>
+
+<script src="script.js" defer></script>
+</body>
+</html>
